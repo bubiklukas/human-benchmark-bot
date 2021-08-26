@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Benchmark Bot</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body class="container-fluid bg-white">
+    <h1 class="display-3 text-center pt-5">Human Benchmark Bot</h1>
+    <section class="text-center">
+        <div class="d-flex justify-content-center flex-wrap mt-5">
+            <div class="p-5">
+                <h1 class="display-5 font-weight-bold mb-3">Reaction Test</h1>
+                <p class="font-italic mb-4">Simple reaction test, nothing hard for bot.</p>
+                <form method="POST" action="/reaction_test/">
+                    <button type="submit" id='script' class="btn btn-primary px-5" onclick="window.open('https://humanbenchmark.com/tests/reactiontime')">Run Script
+                </form>
+            </div>
+            <div class="p-5">
+                <h1 class="display-5 font-weight-bold mb-3">Aim Test</h1>
+                <p class="font-italic mb-4">This aim test consists of 30 targets.</p>
+                <form method="POST" action="/aim_test/">
+                    <button type="submit" id='script' name="submit" class="btn btn-primary px-5" onclick="window.open('https://humanbenchmark.com/tests/aim')">Run Script
+                </form>
+            </div>
+            <div class="p-5">
+                <h1 class="display-5 font-weight-bold mb-3">Memory Test</h1>
+                <p class="font-italic mb-1">Hardest challenge for bot, stops working cca. at 58 level.</p>
+                <h6 class="text-danger mb-4">Run this after you start the test.</h6>
+                <form method="POST" action="/memory_test/">
+                    <button type="submit" id='script' name="submit" class="btn btn-primary px-5" onclick="window.open('https://humanbenchmark.com/tests/memory')">Run Script</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    <div class="bg-light text-center py-2 container">
+        <p class="text-primary mt-2">
+            After you click on Run Script, press R to run it.
+            If you want to stop it hold Q.
+            And if you want to end the script press ESC.
+        </p>
+        <p>It is recommended to wait a few seconds after the test loads.</p>
+    </div>
+    <div class="text-center">
+        <a href="https://humanbenchmark.com/" target="_blank" role="button" class="btn btn-info px-5 my-5">All tests from humanbenchmark.com</a>
+    </div>
+    
+</body>
+<script>
+</script>
+</html>
